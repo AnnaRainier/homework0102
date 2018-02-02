@@ -5,12 +5,16 @@ body {
   width: 100%;
   height: 1200px;
   background-image: url(/pics/nyc.jpg);
+  background-repeat: round;
   position: relative;
   display: inline-block;
 }
 .header {
+  width: 100%;
+  top:0;
+  position: fixed;
   background-color: #696969;
-  opacity: 0.7;
+  z-index: 10;
 }
 .wrapper {
   display: inline-block;
@@ -31,6 +35,7 @@ body {
 .content {
   margin: 100px auto 0;
   width: 30%;
+  display: block;
 }
 .some_content {
   border-radius: 100%;
@@ -55,16 +60,17 @@ body {
   color: white;
   text-align: center;
   border-radius: 20px;
-  margin: 0px auto;
+  margin: 20px auto;
   opacity: 0.7;
   padding: 5px;
+  z-index: 8;
 }
 .founder {
   padding-top: 10px;
   border-radius: 100%;
-  margin: 0px auto;
-  width: 500px;
-  height: 500px;
+  margin: 50px auto;
+  width: 400px;
+  height: 400px;
   display: block;
   opacity: 0.7;
 }
@@ -100,9 +106,144 @@ body {
 .message_field {
   background-color: #696969;
   color: white;
-  width: 400px;
+  width: 500px;
   height: 200px;
   margin: 0px auto;
   opacity: 0.7;
   border-radius: 20px;
+  resize: none;
+  padding: 5px;
+}
+.team-list {
+  opacity: 0.7;
+  width: 500px;
+  margin: 20px auto;
+}
+.team-list a {
+  text-align: center;
+  background-color: #696969;
+  color: white;
+}
+.contact-us {
+  width: 500px;
+  background-color: #696969;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  margin: 50px auto;
+  opacity: 0.7;
+  padding: 5px;
+}
+.joke-of-the-minute {
+  display: inline-block;
+  border-radius: 30px;
+  width: 300px;
+  height: 300px;
+  margin-top:50px;
+  margin-right: 50px;
+  padding: 30px;
+  opacity: 0.7;
+  float: right;
+  background-color: #696969;
+  color: white;
+  z-index: 10;
+}
+.joke-of-the-minute h6 {
+  font-weight: bold;
+}
+.become-a-team {
+  background-color: #696969!important;
+  opacity: 0.7;
+  color: white!important;
+}
+.button-team {
+  width: 100px;
+  background-color: #696969!important;
+  opacity: 0.7;
+  color: white!important;
+  border: black!important;
+  margin-left: 40%;
+}
+.button-descr {
+  width: 100px;
+  background-color: #696969!important;
+  opacity: 0.7;
+  color: white!important;
+  border: black!important;
+  margin-left: 45%;
+}
+.button-descr:hover {
+  background: white!important;
+  color: #696969!important;
+  transition: 0.5s all ease!important;
+}
+.for-team {
+  width: 400px;
+  margin: 20px auto;
+}
+.form-group h5 {
+  text-align: center;
+  color: white;
+}
+.form-group label {
+  color: white;
+}
+.founder-main {
+  padding-top: 10px;
+  border-radius: 100%;
+  margin: 40px auto;
+  display: block;
+  opacity: 0.7;
+  width: 200px;
+  height: 200px;
+}
+.button-team:hover {
+  background: white!important;
+  color: #696969!important;
+  transition: 0.5s all ease!important;
+}
+
+@media (max-width: 1200px) {
+  .joke-of-the-minute {
+    display: block;
+    font-size: 10px;
+    width: 170px;
+    height: 170px;
+    border-radius: 30px;
+    margin-top:50px;
+    margin-right: 50px;
+    padding: 25px;
+    opacity: 0.7;
+    float: right;
+    background-color: #696969;
+    color: white;
+    z-index: 10;
+}
+  .joke-of-the-minute h6 {
+    display: none;
+  }
+  .some_content {
+    padding: 100px 25px;
+    display: block;
+    float:right;
+    margin-top: 50px;
+    width: 400px;
+    height: 400px;
+    font-size: 15px;
+  }
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #696969;
+  opacity: 0.7;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+.footer p {
+  color: white;
+  padding-top: 45px;
+  text-align: center;
+  font-size: 20px;
 }
